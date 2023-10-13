@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+ 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isaac Acquah Website</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nav.css">
+    
+    <link rel="stylesheet" href="css/chat.css">
+    <link rel="stylesheet" href="css/calander.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body style="background-color: #222;">
+   
+ 
+<div class="topnav" id="myTopnav">
+    <a href="index.html" class="active">Home</a>
+    <a href="about.html" >About</a>
+    <a href="Courses.html">Courses</a>
+    <a href="ref.html">References</a>
+    <a href="doc.html">Documentation</a>
+    <a href="Activities.html">Activities</a>
+    <a href="Testimonials.html">Testimonials</a>
+    <a href="contact.html">Contact</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+     <i class="fa fa-bars"></i>
+    </a>
+  </div>
+  
+   
+  <script src="./script/script.js">
+ 
+  </script>
+  
+    <div class="scroll-up-btn">
+        <i class="fab fa-angle-up"></i>
+    </div>
+
+
+
+ <!--home section start -->
+    <section class="home" id="home">
+        <div class="max-width">
+            <div class="home-content">
+                <div class="text-1">Hello, my name is</div>
+                <div class="text-2">ACQUAH ISAAC 0721000067</div>
+                <div class="text-3">And I'm a backend developer<span class="typing"></span></div>
+              
+            </div>
+        </div>
+    </section>
+<!-----   chat -->
+
+<button class="open-button" onclick="openForm()"><i class="fa fa-message">	&#xf4ad; </i></button>
+
+<div class="chat-popup" id="myForm">
+  <form action="" class="form-container" method="post">
+    <h1>Comment </h1>
+
+    <label for="msg"><b>Message</b></label>
+    <textarea placeholder="Type message.." name="msg" required></textarea>
+
+    <button type="submit" class="btn">Send</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+
+    <!-- about section start -->
+    <section class="about" id="about" >
+        <div class="max-width">
+            <h2 class="title">About me</h2>
+            <div class="about-content">
+                <div class="column left">
+                    <img src="./pictures/IMG_1710.JPG" alt="" class="pic" style="border-radius: 50%;">
+                </div>
+                <div class="column right" style="color:#5611df">
+                    <div class="text">I'm Isaac Acquah and I'm an <span class="typing-2"></span></div>
+                    <p>Enthusiastic software developer expert with over one month of experience in the industry, and 
+                      2 years of academic knowledge in information technology.My goals are to be more innovative and creative,
+                      give people the chance to become programmers, and develop solutions-focused applications.
+                      </p><br>
+                      <p>
+                        With the knowledge and abilities they have gained,they can open up job opportunities for other young people.
+                        Eager to communicate to success through hardwork,attention to detail,exellent communication,and organisational skills.
+                      </p><br>
+                      <p>
+                        I was ones a Quality Assurance specialist and software tester at <b>Npuntu Technologies Limited</b>
+                        and cunducted regression testing to ensure that changes to the software do not introduce new defect
+                        kept up-to-date with software testing best practices, tools, and techniques.I was able to identify areas 
+                        for process improvement and suggesting solutions to improve software quality and efficiency.
+                      </p>
+                    <a href="#about">Read More</a>
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section >
+        <style>
+            * {box-sizing: border-box;}
+            body {font-family: Verdana, sans-serif;}
+            .mySlides {display: none;}
+
+
+            .img {
+                vertical-align: middle;}
+            
+            /* Slideshow container */
+            .slideshow-container {
+              max-width: 1000px;
+              position: relative;
+              margin: auto;
+              z-index: -55;
+            }
+            
+            /* Caption text */
+            .texts {
+              color: #0acf38;
+              font-size: 15px;
+              padding: 8px 12px;
+              position: absolute;
+              bottom: 8px;
+              width: 100%;
+              text-align: center;
+            }
+            
+            /* Number text (1/3 etc) */
+            .numbertext {
+              color: #f2f2f2;
+              font-size: 12px;
+              padding: 8px 12px;
+              position: absolute;
+              top: 0;
+            }
+            
+            /* The dots/bullets/indicators */
+            .dot { 
+              height: 15px;
+              width: 15px;
+              margin: 0 2px;
+              background-color: #bbb;
+              border-radius: 50%;
+              display: inline-block;
+              transition: background-color 0.6s ease;
+            }
+            
+            .active {
+              background-color: #13b5e1;
+            }
+            
+            /* Fading animation */
+            .fade {
+              animation-name: fade;
+              animation-duration: 1.5s;
+            }
+            
+            @keyframes fade {
+              from {opacity: .4} 
+              to {opacity: 1}
+            }
+            
+            /* On smaller screens, decrease text size */
+            @media only screen and (max-width: 300px) {
+              .text {font-size: 11px}
+            }
+            </style>
+          
+            
+            <div class="slideshow-container">
+            
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 4</div>
+              <img src="./pictures/IMG_1336.JPG" style="width:100%" class="img" height="900px" >
+              <div class="texts">Day one</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 4</div>
+              <img src= "./pictures/IMG_1340.JPG " style="width:100%" class="img" height="900px" >
+              <div class="texts">Day two</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 4</div>
+              <img src="./pictures/IMG_1341.JPG" class="img" style="width:100%" height="900px">
+              <div class="texts">Day Three</div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">4 / 4</div>
+              <img src="./pictures/family.JPG" class="img" style="width:100%" height="900px">
+              <div class="texts">Day four</div>
+            </div>
+            
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+            </div>
+            
+            <script>
+            let slideIndex = 0;
+            showSlides();
+            
+            function showSlides() {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {slideIndex = 1}    
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+              setTimeout(showSlides, 2000); // Change image every 2 seconds
+            }
+            </script>
+            
+            
+    </section>
+
+
+    
+    <!-- services section start -->
+    <section class="Courses" id="Courses">
+        <div class="max-width">
+            <h2 class="title">Affilated Courses</h2>
+            <div class="serv-content">
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-code"></i>
+                        <div class="text">Web Tech II</div>
+                        <p>
+                        
+                        
+                           
+                           <span style="font-size: 19px;">T</span>his refers to the way 
+                            computers/devices communicate. with each
+                             other using mark up languages.
+                              It invo It is communication.
+                               across the web, and create,
+                                deliver or manage web content
+                            using hypertext markup language (HTML).
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-balance-scale"></i>
+                        <div class="text">Software Engineering</div>
+                        <p>
+                           
+
+                            It is a detailed study of engineering
+                             to the design, development and
+                              maintenance of software.
+                             is the branch of computer science that deals with the design, development, testing, and maintenance of software applications.
+                         
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-globe"></i>
+                        <div class="text">Networking II</div>
+                        <p>
+                           connecting 
+                            computers so that they can share files,
+                             printers and other
+                             computer-related resources.
+                             the exchange of information and ideas among people with a common profession or special interest,
+                              usually in an informal social setting
+                            
+                        </p>
+                    </div>
+                  </div>
+                  </div>
+               </div>
+               <div class="serv-content" style="margin-top:20px ;">
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-chart-line"></i>
+                        <div class="text">Entreprenuership</div>
+                        <p>
+       
+                           
+                            The entrepreneur is defined as 
+                            someone who has the ability and
+                             desire to establish, administer
+                              and succeed in a startup
+                             venture along with risk entitled to it.the activity of setting up a business 
+                             , taking on financial risks in the hope of profit.
+                        
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-code"></i>
+                        <div class="text">PHP Programming</div>
+                        <p>
+ 
+                            PHP is a general-purpose 
+                            scripting language geared toward
+                             web development. It was originally
+                              created by Danish-Canadian programmer
+                               Rasmus Lerdorf in 1994. The PHP
+                                reference implementation is 
+                            now produced by The PHP Group.
+                            </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-book"></i>
+                        <div class="text">Accounting II</div>
+                        <p>
+                            Accounting, is the measurement,
+                             processing, and communication of 
+                             financial and non financial information 
+                             about economic entities such as
+                             businesses and corporations.Accounting is the process of
+                              recording financial transactions.
+                        </p>
+                    </div>
+                </div>
+
+
+                
+
+                 
+               </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- skills section start -->
+    <section class="Activities" id="Activities" style="   background-color: ghostwhite;">
+        <div class="max-width">
+            <h2 class="title">Activities for the year </h2>
+            <div class="Activities-content">
+                    
+                   
+                    <div class="month">      
+                      <ul>
+                        
+                        <li>
+                          My Year Calendar<br>
+                          <span style="font-size:18px">2023</span>
+                          <h6>My daily  Activities</h6>
+    
+                        </li>
+                      </ul>
+                    </div>
+                    
+                    <ul class="weekdays">
+                      <li>June</li>
+                      <li>July</li>
+                      <li>Aug</li>
+                      <li>Sept</li>
+                      <li>Oct</li>
+                      <li>Nov</li>
+                      <li>Dec</li>
+                    </ul>
+                    
+                    <ul class="days">  
+                      <li>1</li>
+                      <li class="tooltip">
+                        <span class="active">   2   </span> 
+                        <span   class="active tooltiptext"> build a website   
+                        </span>
+                        
+                      </li>
+                      <li>3</li>
+                      <li>4</li>
+                      <li>5</li>
+                      <li>6</li>
+                      <li>7</li>
+                      <li class="tooltip">
+                        <span class="active">   8   </span> 
+                        <span   class="active tooltiptext"> Getting a course covered  
+                        </span>
+                        
+                      </li>
+                      <li>9</li>
+                      <li class="tooltip">
+                        <span class="active">   10   </span> 
+                        <span   class="active tooltiptext"> Visit to the family   
+                        </span>
+                        
+                      </li>
+                      <li>11</li>
+                      <li>12</li>
+                      <li>13</li>
+                      <li class="tooltip">
+                        <span class="active">   14   </span> 
+                        <span   class="active tooltiptext"> Festiva Season
+                        </span>
+                        
+                      </li>
+                      <li>15</li>
+                      <li>16</li>
+                      <li>17</li>
+                      <li>18</li>
+                      <li class="tooltip">
+                        <span class="active"> 19  </span> 
+                        <span   class="active tooltiptext"> Almost done with the contract   
+                        </span>
+                        
+                      </li>
+                      <li>20</li>
+                      <li>21</li>
+                      <li>22</li>
+                      <li>23</li>
+                      <li>24</li>
+                      <li class="tooltip">
+                        <span class="active">   25  </span> 
+                        <span   class="active tooltiptext"> Visit to the family   
+                        </span>
+                        
+                      </li>
+                      <li>26</li>
+                      <li class="tooltip">
+                        <span class="active">   27   </span> 
+                        <span   class="active tooltiptext"> Visit to the orphanage   
+                        </span>
+                        
+                      </li>
+                      <li>28</li>
+                      <li>29</li>
+                      <li>30</li>
+                      <li>31</li>
+                    </ul>
+                    
+
+
+            </div>
+        </div>
+        <style>
+          .tooltip {
+            position: relative;
+            display: inline-block;
+            cursor:pointer;
+          
+          }
+          
+          .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 120px;
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px 0;
+            border-bottom: 1px dotted black;
+            /* Position the tooltip */
+            position: absolute;
+            z-index: 1;
+            bottom: 100%;
+            left: 50%;
+            margin-left: -60px;
+          }
+          
+          .tooltip:hover .tooltiptext {
+            visibility: visible;
+           
+          }
+          </style>
+
+    </section>
+
+    <!-- teams section start -->
+    <section class="test" id="Testimonials">
+        <div class="max-width">
+            <h2 class="title" style="color: white;">Testimonials</h2>
+            <div class="carousel owl-carousel">
+                <div class="card">
+                    <div class="box">
+                        <img src="./pictures/IMG_0508.JPG" alt="">
+                        <div class="text">GIFTY</div>
+                        <p>
+               
+                            I'm glad I decided to work with you. 
+                            
+                          </p>
+                    </div>
+                </div>
+            
+                <div class="card">
+                    <div class="box">
+                        <img src= "../midsem/pictures/Dr stephaneNwolley CEO.jpg"alt="">
+                        <div class="text">DR STEPHANE</div>
+                        <p>
+                            Just want to say a massive thank you to you all at Fluid Studio's, especially Jessie.
+                           </p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="box">
+                        <img src="../midsem/pictures/anita.jpeg"alt="">
+                        <div class="text">ANITA MENSAH</div>
+                        <p> 
+                            I appreciate your dedication to the projects that you and your team are on.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     
+  
+    <div class="links" style="background-color: rgb(90, 90, 90);">
+        <div class="contact-links">
+            <a
+              href="#"
+              target="_blank"
+              class="btn contact-details"
+              > <i class="icon fab fa-facebook"></i></a
+            >
+            <a
+              id="profile-link"
+              href="#"
+              target="_blank"
+              class="btn contact-details"
+              >  <i class="icon fab fa-github"></i></a
+            >
+            
+            <a
+            href="#"
+              target="_blank"
+              class="btn contact-details"
+              > <i class="icon fab fa-instagram"></i></a
+            >
+            <a 
+            href="acquaisaac4587@gmail.com"
+            class="btn contact-details"
+              > <i class="icon fas fa-envelope"></i ></a
+            >
+            <a href="tel:0551111810/0246653829" class="btn contact-details"
+              >  <i class="icon fas fa-phone">
+                  
+              </i></a
+            >
+          </div>
+      
+    </div>
+    <!-- footer section start -->
+    <footer>
+        <span>Created By  | <span class="far fa-copyright"></span> Acquah Isaac 2023 All rights reserved.</span>
+    </footer>
+
+    <style>
+  
+  
+    
+     
+        .contact-links {
+          font-family: Poppins;
+          display: flex;
+          justify-content: center;
+          width: 80%;
+          max-width: auto;
+          margin-top: 2%;
+          
+          
+    
+        }
+        
+        .contact-details {
+          font-size: 2.4rem;
+          font-family: Poppins;
+          padding: 10px;
+          color: rgb(255, 255, 255);
+          
+        }
+        
+        .contact-details:hover {
+          color: brown;
+     
+        
+        }
+        .icon{
+            padding-right: 7px;
+            color: white;
+        }
+        /* Footer */
+        
+       
+    
+    @media (max-width:900px) {
+               
+        .contact-links {
+            font-size: 20px;
+      display: flex;
+      
+      flex-direction: column;
+       justify-content: right;
+      
+    }
+    
+
+    
+        }
+        
+         
+        
+       </style>
+  
+</body>
+</html>

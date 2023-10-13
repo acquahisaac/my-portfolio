@@ -1,0 +1,76 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+@media only screen and (min-width: 388px) and (max-width: 1400px){
+.header
+{
+     border-style:dotted; 
+     border-radius:10px;
+     border-color: grey; 
+     background-color: rgb(214, 107, 107);
+     width:99.5%;
+     height:80px;
+}
+.parastyling
+{
+   text-align: center;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   font-size: 36px;
+
+}
+.parastyling:hover
+{
+    color:white;
+}
+
+}
+
+@media only screen and (min-width: 174px) and (max-width: 388px)
+{
+    .header
+{
+     border-style:dotted; 
+     border-radius:10px;
+     border-color: grey; 
+     background-color: rgb(214, 107, 107);
+     width:99.5%;
+     height:160px;
+}
+.parastyling
+{
+   text-align: center;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   font-size: 36px;
+
+}
+.parastyling:hover
+{
+    color:white;
+}
+}
+
+@media only screen and (min-width: 1px) and (max-width: 174px)
+{
+    .header
+{
+     border-style:dotted; 
+     border-radius:10px;
+     border-color: grey; 
+     background-color: rgb(214, 107, 107);
+     width:99.5%;
+     height:160px;
+}
+.parastyling
+{
+   text-align: center;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   font-size: 20px;
+
+}
+.parastyling:hover
+{
+    color:white;
+}
+}
